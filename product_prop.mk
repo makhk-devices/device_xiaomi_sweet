@@ -54,6 +54,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
+# Perfetto
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Render Engine
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.renderer=skiagl \
