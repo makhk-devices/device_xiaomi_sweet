@@ -4,3 +4,6 @@ allow init vendor_overlay_file:dir mounton;
 
 # Smart charging
 allow init vendor_sysfs_battery_supply:file { setattr };
+
+# Allow init to bind mount over vendor file
+allow init vendor_file:file mounton;
